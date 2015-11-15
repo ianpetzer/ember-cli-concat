@@ -211,7 +211,7 @@ module.exports = {
     var closing;
 
     if (ext === 'js') {
-      return '<script src="' + path + '"></script>\n';
+      return '<script src="' + path + '" async></script>\n';
     } else {
       closing = this.useSelfClosingTags ? ' /' : '';
 
